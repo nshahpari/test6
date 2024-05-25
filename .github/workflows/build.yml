@@ -9,10 +9,6 @@ jobs:
     runs-on: ubuntu-20.04
     
     steps:
-    - name: Remove deprecated git config
-      run: |
-        git config --global --unset http.https://github.com/.extraheader
-        
     - uses: actions/checkout@v3
       with:
         node-version: 20
